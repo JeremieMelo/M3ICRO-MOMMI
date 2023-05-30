@@ -1,0 +1,75 @@
+dataset:
+  name: mmi
+  root: "./data"
+  num_workers: 2
+  train_valid_split_ratio: [1, 0]
+  center_crop: null
+  resize_mode: bicubic
+  n_test_samples: null
+  n_valid_samples: null
+  test_ratio: 0.2
+  in_channels: 4
+  num_classes: 10
+  transform: basic
+  shuffle: 1
+  file_list: ["port_5_res_4_range_0.03"]
+  processed_dir: port_5_res_4_range_0.03
+  augment: null
+  test_augment: null
+
+criterion:
+  name: cmse
+  norm: False
+
+aux_criterion: null
+
+optimizer:
+  name: adamw
+  lr: 0.002
+  weight_decay: 0.000
+
+scheduler:
+  name: cosine
+  lr_gamma: 0.99
+  lr_min: 0
+
+run:
+  experiment: "default"
+  n_epochs: 100
+  batch_size: 8
+  use_cuda: 1
+  gpu_id: 0
+  deterministic: 1
+  random_state: 42
+  log_interval: 20
+  train_noise: 0
+  amp: False
+  do_distill: False
+
+quantize:
+  weight_bit: 32
+  input_bit: 32
+
+checkpoint:
+  save_best_model_k: 3
+  checkpoint_dir: "mmi/dpe/pretrain"
+  model_comment: ""
+  resume: 0
+  restore_checkpoint: ""
+  no_linear: 0
+
+model:
+  name: "DPE"
+  n_ports: 5
+  n_pads: 5
+  hidden_dims: [256,256,128,128,128]
+  act_cfg: 
+    type: HSwish
+  dropout_rate: 0.15
+  drop_path_rate: 0.0
+  norm: bn
+  with_cp: False
+
+debug:
+  verbose: 1
+

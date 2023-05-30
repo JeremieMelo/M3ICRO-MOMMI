@@ -1,0 +1,39 @@
+criterion:
+  name: ce
+
+optimizer:
+  name: adam
+  lr: 0.0005
+  weight_decay: 0.000
+
+scheduler:
+  name: cosine
+  lr_gamma: 0.99
+  lr_min: 0
+
+run:
+  experiment: "cifar10_resnet20_train"
+  n_epochs: 50
+  batch_size: 64
+  grad_clip: True
+  max_grad_value: 1
+
+quantize:
+  weight_bit: 8
+  input_bit: 32
+  pad_max: 1
+
+checkpoint:
+  save_best_model_k: 2
+  checkpoint_dir: "cifar10/resnet20/train"
+  model_comment: ""
+  resume: 0
+  restore_checkpoint: ""
+  no_linear: 0
+
+model:
+  name: "DPE_ResNet20"
+
+debug:
+  verbose: 1
+
