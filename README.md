@@ -2,7 +2,7 @@
 
 By [Jiaqi Gu](https://github.com/JeremieMelo), [Hanqing Zhu](https://github.com/zhuhanqing), [Chenghao Feng](https://github.com/Fengchenghao1996), Ray T. Chen and David Z. Pan.
 
-This repo is the official implementation of "M<sup>3</sup>ICRO: Machine Learning-Enabled Compact Photonic Tensor Core based on Programmable Multi-Operand Multimode Interference".
+This repo is the official implementation of ["M<sup>3</sup>ICRO: Machine Learning-Enabled Compact Photonic Tensor Core based on Programmable Multi-Operand Multimode Interference"](https://github.com/JeremieMelo/M3ICRO-MOMMI).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
