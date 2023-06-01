@@ -74,3 +74,11 @@ The training log is under `./log` and the trained checkpoint is under `./checkpo
 `python3 scripts/cifar10/resnet20/train_butterfly.py`
 
 # Citing M<sup>3</sup>ICRO
+```
+@inproceedings{gu2023M3ICRO,
+  title={M3ICRO: Machine Learning-Enabled Compact Photonic Tensor Core based on PRogrammable Multi-Operand Multimode Interference},
+  author={Jiaqi Gu and Hanqing Zhu and Chenghao Feng and Zixuan Jiang and Ray T. Chen and David Z. Pan},
+  booktitle={arXiv preprint arXiv:2305.19505},
+  year={2023}
+}
+```
