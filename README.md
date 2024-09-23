@@ -79,6 +79,6 @@ The training log is under `./log` and the trained checkpoint is under `./checkpo
   title={M3ICRO: Machine Learning-Enabled Compact Photonic Tensor Core based on PRogrammable Multi-Operand Multimode Interference},
   author={Jiaqi Gu and Hanqing Zhu and Chenghao Feng and Zixuan Jiang and Ray T. Chen and David Z. Pan},
   journal={APL Machine Learning},
-  year={2023}
+  year={2024}
 }
 ```
